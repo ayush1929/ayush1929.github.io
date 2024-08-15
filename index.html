@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Patel - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <h1><a href="#home" id="home-link">Ayush Patel</a></h1>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="profile-container">
+          <img src="your-photo.jpg" alt="Ayush Patel" class="profile-pic" />
+          <div class="intro-text">
+            <h2>Hello, I'm Ayush Patel</h2>
+            <p>
+              An analytically-driven IT professional with a focus on
+              Cybersecurity Analytics and process optimization.
+            </p>
+            <button id="show-popup" class="cta-button">Get in Touch</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pop-up Container -->
+    <div id="popup-container" class="popup-container">
+      <div class="popup-content">
+        <span id="close-popup" class="close-btn">&times;</span>
+        <h3>Contact Me</h3>
+        <ul class="social-links">
+          <li>
+            <a href="mailto:patelayush1929@gmail.com" class="social-link"
+              ><i class="fas fa-envelope"></i>Email</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com/in/ayushkumar-patel"
+              class="social-link"
+              ><i class="fab fa-linkedin"></i>LinkedIn</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/ayush1929" class="social-link"
+              ><i class="fab fa-github"></i>GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I am an experienced IT professional with a recent focus on
+          Cybersecurity Analytics. My background includes data analysis, process
+          optimization, and automation tool development. I am familiar with
+          industry standards like NIST and CIS controls and have hands-on
+          experience with security tools and SIEM systems. My goal is to apply
+          my skills to ensure the security and compliance of critical assets and
+          networks.
+        </p>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Programming: Python, C#, Java, PHP</li>
+          <li>Analytics: Tableau, Power BI</li>
+          <li>Data Analysis: IBM Cognos Analytics, IBM SPSS Modeler</li>
+          <li>Database Platforms: SQL Server, MySQL, Oracle</li>
+          <li>Web Development: HTML5, CSS, JavaScript</li>
+          <li>Network Analysis: CISCO Packet Tracer, Wireshark</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="project">
+          <img
+            src="project1-collage.jpg"
+            alt="Computer Accessories Management System"
+            class="project-img"
+          />
+          <h3>Computer Accessories Management System</h3>
+          <p><strong>Environment:</strong> VB.net, SQL, HTML5, CSS</p>
+          <p>
+            <strong>Description:</strong> Created a basic inventory management
+            system for a computer store to maintain inventory and manage stock
+            buy and sell.
+          </p>
+          <p>
+            <a
+              href="https://github.com/ayush1929/Computer-Accessories-Management-System"
+              target="_blank"
+              class="cta-button"
+              >View Project</a
+            >
+          </p>
+        </div>
+        <div class="project">
+          <img
+            src="project2-collage.jpg"
+            alt="Mobile Store Management System"
+            class="project-img"
+          />
+          <h3>Mobile Store Management System</h3>
+          <p><strong>Environment:</strong> Oracle Apex, Oracle Cloud</p>
+          <p>
+            <strong>Description:</strong> Developed a web application for
+            invoice creation and stock management in a mobile store.
+          </p>
+          <p>
+            <a
+              href="https://github.com/ayush1929/Mobile-Store-Management-System"
+              target="_blank"
+              class="cta-button"
+              >View Project</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <div class="container">
+        <h2>Resume</h2>
+        <p>
+          <button
+            id="resume-button"
+            class="cta-button"
+            onclick="window.location.href='Ayush_Patel_Resume.pdf';"
+          >
+            Download Resume (PDF)
+          </button>
+        </p>
+        <p><strong>Summary:</strong></p>
+        <p>
+          Analytically-driven and detail-oriented professional with a recent
+          focus on Cybersecurity Analytics and a solid background in data
+          analysis and process optimization. Proficient in Python, SQL, and C#,
+          with experience in developing automation tools and enhancing business
+          processes. Familiar with industry standards like NIST and CIS
+          controls, and experienced in using security tools and SIEM systems.
+        </p>
+        <p><strong>Experience:</strong></p>
+        <ul>
+          <li>
+            <strong
+              >Post-Graduate Certificate in Cyber Security Analytics</strong
+            >, Mohawk College, Hamilton ON, January 2023 - August 2023
+          </li>
+          <li>
+            <strong>Analytics for Business Decision Making</strong>, Mohawk
+            College, Hamilton ON, September 2023 - April 2024
+          </li>
+          <li>
+            <strong
+              >Bachelor of Science in Computer Application and Information
+              Technology</strong
+            >, Sardar Patel University, Gujarat, India, July 2022
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="container">
+        <h2>Certifications</h2>
+        <ul>
+          <li>IBM Predictive Analytics Modeler</li>
+          <li>IBM Business Intelligence Analyst</li>
+          <li>IBM Enterprise Design Thinking</li>
+          <li>Microsoft Azure AI Fundamentals</li>
+          <li>Microsoft Security, Compliance and Identity Fundamentals</li>
+        </ul>
+        <a
+          href="https://www.credly.com/users/ayushkumar-vinodkumar-patel"
+          class="cta-button"
+          id="view-certifications-button"
+          >View All Certifications</a
+        >
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-links">
+          <a href="mailto:patelayush1929@gmail.com" class="social-link"
+            ><i class="fas fa-envelope social-icon"></i>Email</a
+          >
+          <a
+            href="https://linkedin.com/in/ayushkumar-patel"
+            class="social-link"
+            id="linkedin-link"
+            ><i class="fab fa-linkedin social-icon"></i>LinkedIn Profile</a
+          >
+          <a
+            href="https://github.com/ayush1929"
+            class="social-link"
+            id="github-link"
+            ><i class="fab fa-github social-icon"> </i>GitHub Profile</a
+          >
+        </div>
+        <p>&copy; 2024 Ayush Patel. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

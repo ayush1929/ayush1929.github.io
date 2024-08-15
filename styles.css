@@ -1,0 +1,432 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Popup Container Styles */
+.popup-container {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h3 {
+    margin-top: 0;
+    color: #004d99;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+.close-btn:hover {
+    color: #0066cc;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 10px;
+}
+
+.social-link {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-link i {
+    margin-right: 8px;
+}
+
+.social-link:hover {
+    color: #0066cc;
+}
+
+/* Header */
+header {
+    background: #004d99;
+    color: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* Ensures the header stays above other content */
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+nav h1 a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d3d3d3;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 0px;
+    background: url('your-background-image.jpeg') no-repeat center center/cover;
+    color: #ffffff;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+.intro-text {
+    max-width: 600px;
+    margin-left: 30px;
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background: #004d99;
+    /* Blue color */
+    color: #fff;
+    /* White text */
+    padding: 10px 20px;
+    border-radius: 30px;
+    /* Rounded corners */
+    border: none;
+    /* Remove border */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* Make text bold */
+    transition: background-color 0.3s, transform 0.3s;
+    display: inline-block;
+    /* Ensure the button is inline-block for padding and margin */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    outline: none;
+    /* Remove default focus outline */
+}
+
+.cta-button:hover {
+    background: #003366;
+    /* Darker blue on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge button on hover */
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Project */
+.project {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.project:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+}
+
+/* Resume Section */
+#resume {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#resume h2 {
+    margin-top: 0;
+}
+
+#resume button {
+    background: #004d99;
+    /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+#resume button:hover {
+    background: #003366;
+    /* Darker blue on hover */
+}
+
+/* Certifications Section */
+#certifications {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#certifications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#certifications ul li {
+    margin: 10px 0;
+}
+
+/* Contact Section */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Reduced space between input fields and labels */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #004d99;
+    /* Blue color on focus */
+    outline: none;
+}
+
+form button {
+    background: #004d99;
+    /* Blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    align-self: center;
+    /* Center the submit button */
+    margin-top: 10px;
+}
+
+form button:hover {
+    background: #003366;
+    /* Darker blue on hover */
+}
+
+.contact-info {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-link {
+    color: #007aff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0051a2;
+}
+
+
+/* Footer */
+footer {
+    background: #fff;
+    color: #333;
+    text-align: center;
+    padding: 15px 0;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #007aff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #0051a2;
+}
+
+/* Social Links */
+.social-link {
+    color: #007aff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-link:hover {
+    color: #0051a2;
+    transform: scale(1.1);
+}
+
+.social-icon {
+    width: 14px;
+    height: 14px;
+    margin-right: 5px;
+    /* Space between icon and text */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
