@@ -230,6 +230,11 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js">
+      document.getElementById('nav-toggle').addEventListener('click', function () {
+        var menu = document.getElementById('nav-menu');
+        menu.classList.toggle('show');
+      });
+    </script>
   </body>
 </html>

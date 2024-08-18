@@ -46,28 +46,7 @@ nav h1 a {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #d3d3d3;
+    z-index: 1100;
 }
 
 /* Responsive Styles */
@@ -102,6 +81,7 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 20px 0;
+        text-align: center;
     }
 
     nav ul li a {
