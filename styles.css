@@ -11,14 +11,12 @@ body {
 /* Popup Container Styles */
 .popup-container {
     display: none;
-    /* Hidden by default */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
     justify-content: center;
     align-items: center;
     z-index: 1000;
@@ -84,7 +82,6 @@ header {
     color: #fff;
     padding: 1rem 0;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -157,19 +154,14 @@ nav ul li a:hover {
         width: 250px;
         height: 100%;
         background-color: rgba(0, 77, 153, 0.9);
-        /* Slightly transparent cool blue */
         padding-top: 60px;
-        /* Spacing from the top */
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-        /* Add a shadow to the left side */
         transition: transform 0.3s ease-in-out;
         transform: translateX(100%);
-        /* Initially hide the menu off-screen */
     }
 
     nav ul.show {
         transform: translateX(0);
-        /* Slide the menu into view */
     }
 
     nav ul li {
@@ -194,7 +186,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    padding: 0px;
+    padding: 0;
     background: url('your-background-image.jpeg') no-repeat center center/cover;
     color: #ffffff;
 }
@@ -242,33 +234,22 @@ nav ul li a:hover {
 
 .cta-button {
     background: #004d99;
-    /* Blue color */
     color: #fff;
-    /* White text */
     padding: 10px 20px;
     border-radius: 30px;
-    /* Rounded corners */
     border: none;
-    /* Remove border */
     text-decoration: none;
-    /* Remove underline */
     font-size: 1.1rem;
     font-weight: bold;
-    /* Make text bold */
     transition: background-color 0.3s, transform 0.3s;
     display: inline-block;
-    /* Ensure the button is inline-block for padding and margin */
     cursor: pointer;
-    /* Pointer cursor on hover */
     outline: none;
-    /* Remove default focus outline */
 }
 
 .cta-button:hover {
     background: #003366;
-    /* Darker blue on hover */
     transform: scale(1.05);
-    /* Slightly enlarge button on hover */
 }
 
 /* Sections */
@@ -281,7 +262,7 @@ section {
     margin: 0 auto;
 }
 
-/* Project */
+/* Project Section */
 .project {
     margin: 20px 0;
     padding: 20px;
@@ -310,7 +291,6 @@ section {
 
 #resume button {
     background: #004d99;
-    /* Blue color */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -322,7 +302,6 @@ section {
 
 #resume button:hover {
     background: #003366;
-    /* Darker blue on hover */
 }
 
 /* Certifications Section */
@@ -353,7 +332,6 @@ form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    /* Reduced space between input fields and labels */
 }
 
 .form-group {
@@ -379,13 +357,11 @@ form textarea {
 form input:focus,
 form textarea:focus {
     border-color: #004d99;
-    /* Blue color on focus */
     outline: none;
 }
 
 form button {
     background: #004d99;
-    /* Blue color */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -394,13 +370,11 @@ form button {
     font-size: 1.1rem;
     transition: background-color 0.3s;
     align-self: center;
-    /* Center the submit button */
     margin-top: 10px;
 }
 
 form button:hover {
     background: #003366;
-    /* Darker blue on hover */
 }
 
 .contact-info {
@@ -412,17 +386,6 @@ form button:hover {
 .contact-info p {
     margin: 5px 0;
 }
-
-.social-link {
-    color: #007aff;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.social-link:hover {
-    color: #0051a2;
-}
-
 
 /* Footer */
 footer {
@@ -449,7 +412,6 @@ footer {
     color: #0051a2;
 }
 
-/* Social Links */
 .social-link {
     color: #007aff;
     text-decoration: none;
@@ -465,7 +427,6 @@ footer {
     width: 14px;
     height: 14px;
     margin-right: 5px;
-    /* Space between icon and text */
 }
 
 /* Keyframes for animations */
