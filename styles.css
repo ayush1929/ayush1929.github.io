@@ -139,19 +139,6 @@ nav ul li a:hover {
     color: #d3d3d3;
 }
 
-/* For mobile devices */
-@media (max-width: 768px) {
-    nav ul {
-        display: none;
-    }
-
-    nav ul.show {
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-toggle {
@@ -223,6 +210,21 @@ nav ul li a:hover {
     .intro-text p {
         font-size: 1rem;
     }
+
+    /* Burger menu close button */
+    .close-nav {
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    /* Mobile specific styles */
+    nav ul.show .close-nav {
+        display: block;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -237,43 +239,6 @@ nav ul li a:hover {
 
     .intro-text p {
         font-size: 1.1rem;
-    }
-}
-
-/* Burger menu close button */
-.close-nav {
-    font-size: 2rem;
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    cursor: pointer;
-}
-
-/* Adjust nav menu for the close button */
-.nav-menu {
-    position: relative;
-    padding-top: 60px;
-}
-
-/* Mobile specific styles */
-@media (max-width: 768px) {
-    nav ul.show {
-        display: flex;
-        flex-direction: column;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 250px;
-        height: 100%;
-        background-color: rgba(0, 77, 153, 0.9);
-        padding-top: 60px;
-        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-        transition: transform 0.3s ease-in-out;
-    }
-
-    nav ul.show .close-nav {
-        display: block;
     }
 }
 

@@ -39,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Scroll to certifications
-  const certificationsButton = document.getElementById(
-    "view-certifications-button"
-  );
+  const certificationsButton = document.getElementById("view-certifications-button");
   if (certificationsButton) {
     certificationsButton.addEventListener("click", function () {
       document
