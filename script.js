@@ -53,8 +53,23 @@ document.addEventListener("DOMContentLoaded", function () {
   // Burger menu toggle
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
+  const closeNavButton = document.createElement("span");
+  closeNavButton.innerHTML = "&times;";
+  closeNavButton.className = "close-nav";
+  navMenu.prepend(closeNavButton);
 
   navToggle.addEventListener("click", function () {
     navMenu.classList.toggle("show");
+  });
+
+  // Close burger menu on outside click or close button click
+  closeNavButton.addEventListener("click", function () {
+    navMenu.classList.remove("show");
+  });
+
+  window.addEventListener("click", function (event) {
+    if (!navMenu.contains(event.target) && event.target !== navToggle) {
+      navMenu.classList.remove("show");
+    }
   });
 });
