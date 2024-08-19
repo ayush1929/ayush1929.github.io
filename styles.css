@@ -138,6 +138,18 @@ nav ul li a {
 nav ul li a:hover {
     color: #d3d3d3;
 }
+/* For mobile devices */
+@media (max-width: 768px) {
+    nav ul {
+      display: none;
+    }
+  
+    nav ul.show {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
 
 /* Responsive Styles */
 @media (max-width: 768px) {
