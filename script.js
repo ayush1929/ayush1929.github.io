@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const showPopupButton = document.getElementById("show-popup");
   const popupContainer = document.getElementById("popup-container");
   const closePopupButton = document.getElementById("close-popup");
-  const menu = document.getElementById("nav-menu");
 
   showPopupButton.addEventListener("click", function () {
     popupContainer.style.display = "flex";
@@ -40,9 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Scroll to certifications
-  const certificationsButton = document.getElementById(
-    "view-certifications-button"
-  );
+  const certificationsButton = document.getElementById("view-certifications-button");
   if (certificationsButton) {
     certificationsButton.addEventListener("click", function () {
       document
@@ -52,7 +49,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Burger menu toggle
-  document.getElementById("nav-toggle").addEventListener("click", function (b) {
-    b.menu.classList.toggle("show");
+  document.getElementById("nav-toggle").addEventListener("click", function () {
+    const menu = document.getElementById("nav-menu");
+    menu.classList.toggle("show");
   });
 });

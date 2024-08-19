@@ -179,6 +179,7 @@ nav ul li a:hover {
     nav ul li a:hover {
         color: #d3d3d3;
     }
+
     /* Adjust Hero Section for small screens */
     .hero-content {
         flex-direction: column;
@@ -210,7 +211,20 @@ nav ul li a:hover {
         font-size: 1rem;
     }
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile-pic {
+        width: 200px;
+        height: 200px;
+    }
 
+    .intro-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .intro-text p {
+        font-size: 1.1rem;
+    }
+}
 /* Hero Section */
 .hero {
     display: flex;
