@@ -139,6 +139,8 @@ nav ul li a:hover {
     color: #d3d3d3;
 }
 
+
+
 /* Responsive Styles */
 @media (max-width: 768px) {
     .nav-toggle {
