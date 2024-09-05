@@ -43,10 +43,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const navMenu = document.getElementById("nav-menu");
 
   navToggle.addEventListener("click", function () {
+    // Toggle the class that controls menu visibility
     navMenu.classList.toggle("show");
   });
 
-  // Close burger menu on outside click or close button click
+  // Close burger menu when clicking outside
   window.addEventListener("click", function (event) {
     if (!navMenu.contains(event.target) && event.target !== navToggle) {
       navMenu.classList.remove("show");
