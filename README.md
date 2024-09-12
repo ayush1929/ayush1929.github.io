@@ -1,4 +1,4 @@
-# Ayush Patel - Data Analyst Portfolio
+# Ayush Patel - Portfolio
 
 Welcome to my portfolio website! This portfolio showcases my skills, projects, and experiences as a Data Analyst and Programmer. Below you'll find the structure of the site and links to my various projects and achievements.
 
@@ -53,11 +53,6 @@ You can contact me through:
 
 ## License
 This portfolio website and its content are the intellectual property of Ayush Patel. Feel free to take inspiration from the design, but do not directly copy content or projects without permission.
-
-&copy; 2024 Ayush Patel. All rights reserved.
-
-
-## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
