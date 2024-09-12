@@ -8,7 +8,6 @@ body {
     color: #333;
 }
 
-/* Popup Container Styles */
 .popup-container {
     display: none;
     position: fixed;
@@ -76,7 +75,6 @@ body {
     color: #0066cc;
 }
 
-/* Header */
 header {
     background: #004d99;
     color: #fff;
@@ -180,7 +178,6 @@ nav ul li a:hover {
         color: #d3d3d3;
     }
 
-    /* Adjust Hero Section for small screens */
     .hero-content {
         flex-direction: column;
         padding: 20px;
@@ -210,14 +207,8 @@ nav ul li a:hover {
     .intro-text p {
         font-size: 1rem;
     }
-
-    /* Mobile specific styles */
-    nav ul.show .close-nav {
-        display: block;
-    }
 }
 
-/* Hero Section */
 .hero {
     display: flex;
     align-items: center;
@@ -299,7 +290,35 @@ section {
     margin: 0 auto;
 }
 
-/* Project Section */
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background-color: #333;
+    color: #fff;
+}
+
+.project-section {
+    display: none;
+}
+
+.project-section.active {
+    display: block;
+}
+
 .project {
     margin: 20px 0;
     padding: 20px;
@@ -314,14 +333,10 @@ section {
     transform: scale(1.02);
 }
 
-/* Ensure project images are always responsive */
 .project-img {
     width: 100%;
-    /* Ensure the image takes the full width of its container */
     height: auto;
-    /* Maintain aspect ratio */
     max-width: 600px;
-    /* Optional: You can limit the maximum width of the image */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
@@ -329,10 +344,8 @@ section {
 
 .project-img:hover {
     transform: scale(1.05);
-    /* Slight zoom effect on hover */
 }
 
-/* Responsive layout for the project section */
 @media (max-width: 768px) {
     .project {
         margin: 10px 0;
@@ -341,11 +354,9 @@ section {
 
     .project-img {
         max-width: 100%;
-        /* Ensure images are fully responsive on smaller screens */
     }
 }
 
-/* Resume Section */
 #resume {
     background: #ffffff;
     padding: 20px;
@@ -372,7 +383,6 @@ section {
     background: #003366;
 }
 
-/* Footer */
 footer {
     background: #fff;
     color: #333;
@@ -412,17 +422,4 @@ footer {
     width: 14px;
     height: 14px;
     margin-right: 5px;
-}
-
-/* Keyframes for animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }

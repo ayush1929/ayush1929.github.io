@@ -108,100 +108,137 @@
     <section id="projects">
       <div class="container">
         <h2>Projects</h2>
-        <div class="project">
-          <img
-            src="capstone_project.jpg"
-            alt="Data Analyst Capstone Project"
-            class="project-img"
-          />
-          <h3>Data Analysis and Visualization (Capstone Group Project)</h3>
-          <p>
-            Analyzed large datasets of LinkedIn job postings using Tableau,
-            Excel, and IBM SPSS Modeler. Applied predictive modeling and
-            clustering to identify job market trends, salary disparities, and
-            required skills. Developed actionable insights to aid career
-            development and talent management through data-driven
-            recommendations.
-          </p>
-          <p>
-            <a
-              href="https://github.com/ayush1929/Data_Analyst_Capstone/blob/main/Final%20Report%20Capstone_Team4.pdf"
-              target="_blank"
-              class="cta-button"
-              >View Project</a
-            >
-          </p>
+
+        <div class="tab-container">
+          <button
+            class="tab-button active"
+            onclick="showSection('data-projects')"
+          >
+            Data Analysis Projects
+          </button>
+          <button
+            class="tab-button"
+            onclick="showSection('programming-projects')"
+          >
+            Programming Projects
+          </button>
         </div>
-        <div class="project">
-          <img
-            src="HEAD_2024.jpg"
-            alt="HEAD Competition Project"
-            class="project-img"
-          />
-          <h3>
-            Assessing Risk of Extreme Weather on Facilities Maintenance (Group
-            Project)
-          </h3>
-          <p>
-            Conducted a data analysis project for the City of Hamilton,
-            assessing the impact of extreme weather on facilities maintenance
-            and infrastructure. Developed predictive models for the Facility
-            Condition Index (FCI) to forecast building deterioration due to
-            climate change. Proposed strategies for flood risk mitigation, early
-            warning systems, and climate-resistant materials.
-          </p>
-          <p>
-            <a
-              href="https://github.com/ayush1929/HEAD_2024/blob/main/Team11-HeadCompetition-FinalPoster.pdf"
-              target="_blank"
-              class="cta-button"
-              >View Poster</a
-            >
-          </p>
+
+        <!-- Data Analysis Projects Section -->
+        <div id="data-projects" class="project-section active">
+          <div class="project">
+            <img
+              src="capstone_project.jpg"
+              alt="Data Analyst Capstone Project"
+              class="project-img"
+            />
+            <h3>Data Analysis and Visualization (Capstone Group Project)</h3>
+            <p>
+              Analyzed large datasets of LinkedIn job postings using Tableau,
+              Excel, and IBM SPSS Modeler. Applied predictive modeling and
+              clustering to identify job market trends, salary disparities, and
+              required skills. Developed actionable insights to aid career
+              development and talent management through data-driven
+              recommendations.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ayush1929/Data_Analyst_Capstone"
+                target="_blank"
+                class="cta-button"
+                >View Project</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <img
+              src="HEAD_2024.jpg"
+              alt="HEAD Competition Project"
+              class="project-img"
+            />
+            <h3>
+              Assessing Risk of Extreme Weather on Facilities Maintenance (Group
+              Project)
+            </h3>
+            <p>
+              Conducted a data analysis project for the City of Hamilton,
+              assessing the impact of extreme weather on facilities maintenance
+              and infrastructure. Developed predictive models for the Facility
+              Condition Index (FCI) to forecast building deterioration due to
+              climate change. Proposed strategies for flood risk mitigation,
+              early warning systems, and climate-resistant materials.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ayush1929/HEAD_2024/blob/main/Team11-HeadCompetition-FinalPoster.pdf"
+                target="_blank"
+                class="cta-button"
+                >View Poster</a
+              >
+            </p>
+          </div>
         </div>
-        <div class="project">
-          <img
-            src="login-alert.jpg"
-            alt="Login Alert System"
-            class="project-img"
-          />
-          <h3>Login Alert System (Python)</h3>
-          <p>
-            Created a tool that captures login details and sends real-time
-            security alerts. The system detects login activity, captures an
-            image via the webcam, and sends an email notification with the image
-            attached.
-          </p>
-          <p>
-            <a
-              href="https://github.com/ayush1929/Login-Alert-System"
-              target="_blank"
-              class="cta-button"
-              >View Project</a
-            >
-          </p>
-        </div>
-        <div class="project">
-          <img
-            src="project2-collage.jpg"
-            alt="YouTube Music Video Downloader"
-            class="project-img"
-          />
-          <h3>YouTube Music Video Downloader (Python & FFmpeg)</h3>
-          <p>
-            Developed a program that downloads high-quality music videos from
-            YouTube. It combines the best video and audio streams into a single
-            file, helping users save videos in their preferred quality without
-            the need for complex video editing software.
-          </p>
-          <p>
-            <a
-              href="https://github.com/ayush1929/YouTube-Downloader"
-              target="_blank"
-              class="cta-button"
-              >View Project</a
-            >
-          </p>
+
+        <!-- Programming Projects Section -->
+        <div id="programming-projects" class="project-section">
+          <div class="project">
+            <img
+              src="login-alert.jpg"
+              alt="Login Alert System"
+              class="project-img"
+            />
+            <h3>Login Alert System (Python)</h3>
+            <p>
+              Created a tool that captures login details and sends real-time
+              security alerts. The system detects login activity, captures an
+              image via the webcam, and sends an email notification with the
+              image attached.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ayush1929/Login-Alert-System"
+                target="_blank"
+                class="cta-button"
+                >View Project</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>YouTube Music Video Downloader (Python & FFmpeg)</h3>
+            <p>
+              Developed a program that downloads high-quality music videos from
+              YouTube. It combines the best video and audio streams into a
+              single file, helping users save videos in their preferred quality
+              without the need for complex video editing software.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ayush1929/YouTube-Downloader"
+                target="_blank"
+                class="cta-button"
+                >View Project</a
+              >
+            </p>
+          </div>
+
+          <div class="project">
+            <h3>Password Generator (Python)</h3>
+            <p>
+              Built a customizable password generator that creates secure,
+              randomized passwords based on user-defined criteria. It helps
+              improve password strength and security practices.
+            </p>
+            <p>
+              <a
+                href="https://github.com/ayush1929/Password-Generator"
+                target="_blank"
+                class="cta-button"
+                >View Project</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -220,11 +257,10 @@
         </p>
         <p><strong>Summary:</strong></p>
         <p>
-          Data Analyst with a strong foundation in data analytics,
-          cybersecurity, and predictive modeling. Proficient in Python, SQL, and
-          data visualization tools like Tableau and Power BI. Experienced in
-          data migration, data accuracy validation, and driving insights through
-          analytics.
+          Data Analyst with expertise in data visualization, predictive
+          modeling, and cybersecurity. Skilled in Python, C#, Java, and SQL
+          databases, I focus on leveraging data to drive actionable insights and
+          optimize business operations.
         </p>
         <p><strong>Education:</strong></p>
         <ul>
@@ -287,7 +323,6 @@
         <p>&copy; 2024 Ayush Patel. All rights reserved.</p>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
