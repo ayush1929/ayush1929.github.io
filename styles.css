@@ -307,7 +307,7 @@ section {
 }
 
 .tab-button.active {
-    background-color: #333;
+    background: #004d99;
     color: #fff;
 }
 
