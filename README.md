@@ -1,64 +1,61 @@
-# Ayush Patel - Portfolio
+# Ayush Patel - Data Analyst Portfolio
 
-Welcome to my portfolio! This website showcases my work, skills, and experience as a Cybersecurity & IT Professional. Explore the sections below to learn more about my projects, certifications, and background.
+Welcome to my portfolio website! This portfolio showcases my skills, projects, and experiences as a Data Analyst and Programmer. Below you'll find the structure of the site and links to my various projects and achievements.
 
-## Overview
+## Website Sections
 
-This portfolio is designed to highlight my professional journey, including key projects, certifications, and educational background. Whether you're here to view my latest work or to get in touch, you'll find everything you need.
+### 1. Home
+The homepage introduces me and provides a brief overview of my background as a Data Analyst specializing in data visualization, predictive analytics, and cybersecurity.
 
-## Features
+### 2. About Me
+This section provides more details about my professional background, technical skills, and areas of expertise:
+- **Data Analysis**: Tableau, Power BI, IBM Cognos Analytics, IBM SPSS Modeler
+- **Programming**: Python, C#, Java, PHP
+- **Database Platforms**: SQL Server, MySQL, Oracle
+- **Cyber Security**: Incident Response, Vulnerability Management, Network Security (TCP/IP, VPN)
+- **Project Management**: MS Project, Process Improvement
 
-- **Home Section**: Introduction and quick overview of who I am and what I do.
-- **About Me**: Detailed background including my experience in IT and Cybersecurity.
-- **Projects**: Showcase of the most significant projects I've worked on.
-- **Resume**: Downloadable resume in PDF format.
-- **Certifications**: List of certifications with a link to view all on Credly.
-- **Contact**: Easily get in touch via email or connect on LinkedIn and GitHub.
+### 3. Projects
+The projects section is divided into two categories: **Data Analysis Projects** and **Programming Projects**.
+
+#### Data Analysis Projects:
+- **[Data Analyst Capstone Group Project](https://github.com/ayush1929/Data_Analyst_Capstone)**: Analyzed large datasets of LinkedIn job postings using Tableau and IBM SPSS Modeler. Developed insights to aid career development and talent management.
+- **[Assessing Risk of Extreme Weather on Facilities Maintenance (Group Project)](https://github.com/ayush1929/HEAD_2024/blob/main/Team11-HeadCompetition-FinalPoster.pdf)**: Conducted a data analysis project for the City of Hamilton, developing predictive models to forecast infrastructure deterioration due to climate change.
+
+#### Programming Projects:
+- **[Login Alert System (Python)](https://github.com/ayush1929/Login-Alert-System)**: A tool that captures login details and sends real-time security alerts via email with webcam images.
+- **[YouTube Music Video Downloader (Python & FFmpeg)](https://github.com/ayush1929/YouTube-Downloader)**: A Python program that downloads high-quality music videos and merges audio and video streams into a single file.
+- **[Password Generator (Python)](https://github.com/ayush1929/Password-Generator)**: A customizable tool that creates secure, randomized passwords based on user-defined criteria.
+
+### 4. Resume
+This section provides access to my [resume in PDF format](Ayush_Patel_Resume.pdf), along with a summary of my experience, education, and key skills.
+
+### 5. Certifications
+In this section, I showcase my key certifications:
+- IBM Predictive Analytics Modeler
+- IBM Business Intelligence Analyst
+- Microsoft Azure AI Fundamentals
+- Microsoft Security, Compliance and Identity Fundamentals
+- IBM Enterprise Design Thinking
+
+View all certifications on [Credly](https://www.credly.com/users/ayushkumar-vinodkumar-patel).
+
+### 6. Contact
+You can contact me through:
+- **Email**: [patelayush1929@gmail.com](mailto:patelayush1929@gmail.com)
+- **LinkedIn**: [linkedin.com/in/ayushkumar-patel](https://linkedin.com/in/ayushkumar-patel)
+- **GitHub**: [github.com/ayush1929](https://github.com/ayush1929)
 
 ## Technologies Used
+- **HTML5, CSS3, JavaScript**: For the website's structure, style, and interactivity.
+- **Font Awesome**: For icons used throughout the site.
+- **GitHub**: For hosting the source code of the website and projects.
 
-- **Frontend**: HTML5, CSS3, JavaScript
-- **Design**: Responsive design with mobile-first approach
-- **Frameworks & Libraries**: Font Awesome for icons
-- **Tools**: GitHub for version control, GitHub Pages for hosting
+## License
+This portfolio website and its content are the intellectual property of Ayush Patel. Feel free to take inspiration from the design, but do not directly copy content or projects without permission.
 
-## Projects
+&copy; 2024 Ayush Patel. All rights reserved.
 
-### [Computer Accessories Management System](https://github.com/ayush1929/Computer-Accessories-Management-System)
-A basic inventory management system for a computer store to maintain inventory and manage stock buy and sell.
-
-- **Environment**: VB.net, SQL, HTML5, CSS
-- **Description**: Created a system to efficiently manage and track inventory.
-
-### [Mobile Store Management System](https://github.com/ayush1929/Mobile-Store-Management-System)
-A web application developed for invoice creation and stock management in a mobile store.
-
-- **Environment**: Oracle Apex, Oracle Cloud
-- **Description**: Developed a comprehensive solution for mobile store management.
-
-## Certifications
-
-- **IBM Predictive Analytics Modeler**
-- **IBM Business Intelligence Analyst**
-- **IBM Enterprise Design Thinking**
-- **Microsoft Azure AI Fundamentals**
-- **Microsoft Security, Compliance and Identity Fundamentals**
-
-[View all certifications](https://www.credly.com/users/ayushkumar-vinodkumar-patel)
-
-## Resume
-
-You can download my resume here:
-
-[Download Resume (PDF)](Ayush_Patel_Resume.pdf)
-
-## Contact Me
-
-Feel free to reach out if you'd like to connect or have any inquiries:
-
-- **Email**: [patelayush1929@gmail.com](mailto:patelayush1929@gmail.com)
-- **LinkedIn**: [Ayush Patel on LinkedIn](https://linkedin.com/in/ayushkumar-patel)
-- **GitHub**: [ayush1929 on GitHub](https://github.com/ayush1929)
 
 ## License
 
