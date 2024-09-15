@@ -57,3 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+function showSection(sectionId) {
+  document.querySelectorAll(".project-section").forEach((section) => {
+    section.classList.remove("active");
+  });
+  document.querySelectorAll(".tab-button").forEach((button) => {
+    button.classList.remove("active");
+  });
+  document.getElementById(sectionId).classList.add("active");
+  event.target.classList.add("active");
+}
