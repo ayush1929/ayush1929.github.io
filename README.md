@@ -1,6 +1,6 @@
 # Ayush Patel - Portfolio
 
-Welcome to my portfolio website! This portfolio showcases my skills, projects, and experiences as a Data Analyst and Programmer. Below you'll find the structure of the site and links to my various projects and achievements.
+Welcome to my portfolio website! This portfolio showcases my skills, projects, and experiences as a Data Analyst, Programmer, and Cybersecurity specialist. Below you'll find the structure of the site and links to my various projects and achievements.
 
 ## Website Sections
 
@@ -8,18 +8,24 @@ Welcome to my portfolio website! This portfolio showcases my skills, projects, a
 The homepage introduces me and provides a brief overview of my background as a Data Analyst specializing in data visualization, predictive analytics, and cybersecurity.
 
 ### 2. About Me
-This section provides more details about my professional background, technical skills, and areas of expertise:
+This section provides more details about my professional background, education, and technical skills:
 - **Data Analysis**: Tableau, Power BI, IBM Cognos Analytics, IBM SPSS Modeler
 - **Programming**: Python, C#, Java, PHP
+- **Web Development**: HTML, CSS, JavaScript, .NET
 - **Database Platforms**: SQL Server, MySQL, Oracle
 - **Cyber Security**: Incident Response, Vulnerability Management, Network Security (TCP/IP, VPN)
 - **Project Management**: MS Project, Process Improvement
+
+#### Education:
+- **Bachelor of Science in Computer Application and Information Technology** - Sardar Patel University, Gujarat, India, July 2022
+- **Post-Graduate Certificate in Analytics for Business Decision Making** - Mohawk College, Hamilton ON, September 2023 - April 2024
+- **Post-Graduate Certificate in Cyber Security Analytics** - Mohawk College, Hamilton ON, January 2023 - August 2023
 
 ### 3. Projects
 The projects section is divided into two categories: **Data Analysis Projects** and **Programming Projects**.
 
 #### Data Analysis Projects:
-- **[Data Analyst Capstone Group Project](https://github.com/ayush1929/Data_Analyst_Capstone)**: Analyzed large datasets of LinkedIn job postings using Tableau and IBM SPSS Modeler. Developed insights to aid career development and talent management.
+- **[Data Analyst Capstone Group Project](https://github.com/ayush1929/Data_Analyst_Capstone)**: Analyzed large datasets of LinkedIn job postings using Tableau, Excel, and IBM SPSS Modeler. Developed insights to aid career development and talent management.
 - **[Assessing Risk of Extreme Weather on Facilities Maintenance (Group Project)](https://github.com/ayush1929/HEAD_2024/blob/main/Team11-HeadCompetition-FinalPoster.pdf)**: Conducted a data analysis project for the City of Hamilton, developing predictive models to forecast infrastructure deterioration due to climate change.
 
 #### Programming Projects:
@@ -37,6 +43,16 @@ In this section, I showcase my key certifications:
 
 View all certifications on [Credly](https://www.credly.com/users/ayushkumar-vinodkumar-patel).
 
+I also hold **LinkedIn Learning Certifications** in:
+- Excel Advanced Formatting Techniques
+- Excel Creating a Dashboard with Power Query Microsoft 365
+- Excel Data Visualization Designing Custom Visualizations
+- Excel Data Visualization Mastering 20 Charts and Graphs
+- Power BI Data Modeling with DAX
+- Power BI Essential Training
+- Tableau Essential Training
+- Tableau for Data Scientists
+
 ### 5. Resume
 This section provides access to my [resume in PDF format](Ayush_Patel_Resume.pdf), along with a summary of my experience, education, and key skills.
 
@@ -49,7 +65,8 @@ You can contact me through:
 ## Technologies Used
 - **HTML5, CSS3, JavaScript**: For the website's structure, style, and interactivity.
 - **Font Awesome**: For icons used throughout the site.
-- **GitHub**: For hosting the source code of the website and projects.
+- **GitHub Pages**: For hosting the portfolio.
+- **FFmpeg**: Used in the YouTube Music Video Downloader project for merging video and audio streams.
 
 ## License
 This portfolio website and its content are the intellectual property of Ayush Patel. Feel free to take inspiration from the design, but do not directly copy content or projects without permission.
@@ -58,7 +75,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Acknowledgments
 
-Special thanks to everyone who has supported my journey in IT and Cybersecurity.
+Special thanks to everyone who has supported my journey in IT, Data Analytics, and Cybersecurity.
 
 ---
 

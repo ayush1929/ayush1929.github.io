@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
 
+      // Close the mobile menu when a link is clicked
+      document.getElementById("nav-menu").classList.remove("show");
+
       // Special case for contact link
       if (this.id === "contact-link") {
         document.getElementById("popup-container").style.display = "flex";
@@ -37,30 +40,20 @@ document.addEventListener("DOMContentLoaded", function () {
       popupContainer.style.display = "none";
     }
   });
-
-  // Burger menu toggle
+});
+document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.getElementById("nav-toggle");
   const navMenu = document.getElementById("nav-menu");
 
+  // Toggle the "show" class to make the menu visible on click
   navToggle.addEventListener("click", function () {
     navMenu.classList.toggle("show");
   });
 
-  // Close burger menu on outside click
-  window.addEventListener("click", function (event) {
-    if (!navMenu.contains(event.target) && event.target !== navToggle) {
+  // Close the menu when a link is clicked
+  document.querySelectorAll("nav ul li a").forEach((link) => {
+    link.addEventListener("click", function () {
       navMenu.classList.remove("show");
-    }
+    });
   });
 });
-
-function showSection(sectionId) {
-  document.querySelectorAll(".project-section").forEach((section) => {
-    section.classList.remove("active");
-  });
-  document.querySelectorAll(".tab-button").forEach((button) => {
-    button.classList.remove("active");
-  });
-  document.getElementById(sectionId).classList.add("active");
-  event.target.classList.add("active");
-}
