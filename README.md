@@ -27,10 +27,7 @@ The projects section is divided into two categories: **Data Analysis Projects** 
 - **[YouTube Music Video Downloader (Python & FFmpeg)](https://github.com/ayush1929/YouTube-Downloader)**: A Python program that downloads high-quality music videos and merges audio and video streams into a single file.
 - **[Password Generator (Python)](https://github.com/ayush1929/Password-Generator)**: A customizable tool that creates secure, randomized passwords based on user-defined criteria.
 
-### 4. Resume
-This section provides access to my [resume in PDF format](Ayush_Patel_Resume.pdf), along with a summary of my experience, education, and key skills.
-
-### 5. Certifications
+### 4. Certifications
 In this section, I showcase my key certifications:
 - IBM Predictive Analytics Modeler
 - IBM Business Intelligence Analyst
@@ -39,6 +36,9 @@ In this section, I showcase my key certifications:
 - IBM Enterprise Design Thinking
 
 View all certifications on [Credly](https://www.credly.com/users/ayushkumar-vinodkumar-patel).
+
+### 5. Resume
+This section provides access to my [resume in PDF format](Ayush_Patel_Resume.pdf), along with a summary of my experience, education, and key skills.
 
 ### 6. Contact
 You can contact me through:
