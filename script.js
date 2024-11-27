@@ -57,6 +57,13 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+// Disable right-click for images
+document.addEventListener("contextmenu", function (e) {
+  if (e.target.tagName === "IMG") {
+      e.preventDefault();
+      alert("Right-click is disabled to protect the images.");
+  }
+});
 function showSection(sectionId) {
   document.querySelectorAll(".project-section").forEach((section) => {
     section.classList.remove("active");
