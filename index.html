@@ -1,468 +1,369 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ayush Patel - Porjects and Certifications</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="container">
-          <h1><a href="#home" id="home-link">Ayush Patel</a></h1>
-          <button id="nav-toggle" class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
-          <ul id="nav-menu" class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <!-- <li><a href="#about">About Me</a></li> -->
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="photography.html">Photography</a></li>
-           <!--  <li><a href="#resume">Resume</a></li> -->
-            <li><a href="#contact" id="contact-link">Contact</a></li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ayush Patel — Data Analyst Portfolio</title>
+  <meta name="description" content="Ayush Patel — Data Analyst portfolio. SQL, Python, Power BI, Tableau. Projects, certifications, education, photography, and contact." />
+  <link rel="canonical" href="https://ayush1929.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ayush Patel — Data Analyst" />
+  <meta property="og:description" content="Projects, certifications, education & photography." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ayush1929.github.io/" />
+  <meta property="og:image" content="assets/og-cover.png" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ayush Patel — Data Analyst" />
+  <meta name="twitter:description" content="Projects, certifications, education & photography." />
+  <meta name="twitter:image" content="assets/og-cover.png" />
+
+  <!-- Schema.org Person -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ayushkumar Patel",
+    "jobTitle":"Data Analyst",
+    "email":"mailto:patelayush1929@gmail.com",
+    "telephone":"+1-365-476-1929",
+    "url":"https://ayush1929.github.io/",
+    "sameAs":["https://linkedin.com/in/ayushkumar-patel","https://github.com/ayush1929"],
+    "knowsAbout":["SQL","Python","Pandas","Power BI","Tableau","Excel","Data Visualization","Forecasting"]
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer"
+  />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Decorative background -->
+  <div class="bg" aria-hidden="true">
+    <div class="bg-gradient"></div>
+
+    <!-- These will be live-typed by script.js -->
+    <pre class="bg-code" id="bg-code-1"></pre>
+    <pre class="bg-code code-2" id="bg-code-2"></pre>
+  </div>
+
+  <header role="banner">
+    <nav aria-label="Primary">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" id="home-link">Ayush Patel</a>
+        <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+          <i class="fas fa-bars" aria-hidden="true"></i>
+        </button>
+        <ul id="nav-menu" class="nav-menu">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>         <!-- NEW -->
+          <li><a href="#photography">Photography</a></li>       <!-- RENAMED -->
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact" id="contact-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="hero container reveal">
+      <div class="hero-inner glass">
+        <img src="your-photo.jpg" alt="Portrait of Ayush Patel" class="profile-pic" loading="lazy" decoding="async" />
+        <div class="intro">
+          <h1>Data Analyst</h1>
+          <p class="tagline">SQL • Python • Power BI • Tableau • Excel</p>
+          <ul class="hero-highlights">
+            <li>Data quality & automation</li>
+            <li>KPI dashboards</li>
+            <li>Data Analysis and Storytelling</li>
           </ul>
-        </div>
-      </nav>
-    </header>
-
-    <section id="home-link" class="hero">
-      <div class="hero-content">
-        <div class="profile-container">
-          <img src="your-photo.jpg" alt="Ayush Patel" class="profile-pic" />
-          <div class="intro-text">
-            <h2>Hello, I'm Ayush Patel</h2>
-            <!-- <p>
-              A Data Analyst | Software Developer  specializing in data visualization, predictive
-              analytics, and cybersecurity.
-            </p> -->
-            <button id="show-popup" class="cta-button">Get in Touch</button>
+          <div class="cta-row">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <button id="show-popup" class="btn ghost">Get in Touch</button>
           </div>
+        </div>
+      </div>
+
+      <!-- KPIs -->
+      <div class="kpi-grid five">
+        <div id="kpi-years" class="kpi glass reveal" data-start-year="2019">
+          <div class="num">0</div>Years in Tech
+        </div>
+
+        <button id="kpi-data" class="kpi glass reveal kpi-link" data-target-section="data-projects" type="button">
+          <div class="num">0</div>Total Data Projects
+        </button>
+
+        <button id="kpi-prog" class="kpi glass reveal kpi-link" data-target-section="programming-projects" type="button">
+          <div class="num">0</div>Total Programming Projects
+        </button>
+
+        <button id="kpi-cert" class="kpi glass reveal kpi-link" type="button">
+          <div class="num">0</div>Certifications Earned
+        </button>
+        <button id="kpi-tech" class="kpi glass reveal kpi-link" type="button">
+          <div class="num">0</div>Technologies Mastered
+        </button>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="container section">
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="tabs reveal">
+        <button class="tab-button active" onclick="showSection('data-projects', this)">Data Analysis</button>
+        <button class="tab-button" onclick="showSection('programming-projects', this)">Programming</button>
+      </div>
+
+      <div id="data-projects" class="project-section active">
+        <div class="grid">
+          <article class="card reveal">
+            <img src="capstone_project.jpg" alt="Capstone dashboard screenshot" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3>Data Analysis & Visualization (Capstone)</h3>
+              <p>Analyzed LinkedIn postings with Tableau, Excel, SPSS; clustering + predictive models for trends & skills.</p>
+              <p class="meta">Outcome: recommendations for curriculum & hiring focus.</p>
+              <div class="actions">
+                <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/ayush1929/Data_Analyst_Capstone">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img src="HEAD_2024.jpg" alt="HEAD competition poster" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3>Extreme Weather Risk & Facilities</h3>
+              <p>Forecasted FCI degradation; proposed mitigation for floods, early warnings, resilient materials.</p>
+              <p class="meta">Outcome: prioritized maintenance & budgets.</p>
+              <div class="actions">
+                <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/ayush1929/HEAD_2024/blob/main/Team11-HeadCompetition-FinalPoster.pdf">View Project</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div id="programming-projects" class="project-section">
+        <div class="grid">
+          <article class="card reveal">
+            <img src="login-alert.jpg" alt="Login alert UI" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3>Login Alert System (Python)</h3>
+              <p>Captures login details, webcam snapshot, emails alerts for suspicious activity.</p>
+              <p class="meta">Impact: faster response to unauthorized access.</p>
+              <div class="actions">
+                <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/ayush1929/login-alert">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card reveal">
+            <img src="task_api.jpg" alt="Task API UI" loading="lazy" decoding="async" />
+            <div class="card-body">
+              <h3>Task Management API + UI</h3>
+              <p>Flask + SQLite REST API with scheduling, reminders, user management and simple front end.</p>
+              <div class="actions">
+                <a class="btn primary" target="_blank" rel="noopener" href="https://github.com/ayush1929/task-management-api/blob/main/app.py">View Code</a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- Pop-up Container -->
-    <div id="popup-container" class="popup-container">
-      <div class="popup-content">
-        <span id="close-popup" class="close-btn">&times;</span>
-        <h3>Contact Me</h3>
-        <ul class="social-links">
-          <li>
-            <a href="mailto:ayushkumarp.29@gmail.com" class="social-link">
-              <i class="fas fa-envelope"></i>Email
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://linkedin.com/in/ayushkumar-patel"
-              class="social-link"
-            >
-              <i class="fab fa-linkedin"></i>LinkedIn
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/ayush1929" class="social-link">
-              <i class="fab fa-github"></i>GitHub
-            </a>
-          </li>
-        </ul>
+    <!-- Education -->
+    <section id="education" class="container section">
+      <h2 class="section-title reveal">Education</h2>
+      <div class="edu-grid">
+        <article class="edu-card glass reveal">
+          <h3>B.Sc. in Computer Application & Information Technology</h3>
+          <p class="meta">Sardar Patel University — CGPA <strong>9.65</strong></p>
+        </article>
+        <article class="edu-card glass reveal">
+          <h3>Cyber Security Analytics (Honours)</h3>
+          <p class="meta">Mohawk College — Hamilton, ON</p>
+        </article>
+        <article class="edu-card glass reveal">
+          <h3>Analytics for Business Decision Making</h3>
+          <p class="meta">Mohawk College — Hamilton, ON</p>
+        </article>
       </div>
+    </section>
+    <!-- Skills -->
+    <section id="skills" class="container section">
+      <h2 class="section-title reveal">Skills</h2>
+      <p class="subhead reveal">A snapshot of the technologies, tools, and methods I work with.</p>
+      <div class="skills-grid reveal">
+        <!-- placeholder list – we’ll refine later -->
+        <span class="skill">Python</span>
+        <span class="skill">SQL</span>
+        <span class="skill">Power BI</span>
+        <span class="skill">Tableau</span>
+        <span class="skill">Excel</span>
+        <span class="skill">Pandas</span>
+        <span class="skill">NumPy</span>
+        <span class="skill">Matplotlib</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">REST APIs</span>
+        <span class="skill">Data Visualization</span>
+        <span class="skill">Dashboarding</span>
+      </div>
+    </section>
+
+
+    <!-- Photography -->
+    <section id="photography" class="container section">          <!-- id was "photography" -->
+  <h2 class="section-title reveal">Photography</h2>  
+
+      <!-- Hobby block: Aurora -->
+      <div class="hobby-block" data-gallery="aurora">
+        <h3 class="subhead reveal">Aurora Photography</h3>
+        <p class="subhead reveal">Captured moments of the northern lights — click any photo to view fullscreen.</p>
+
+        <div class="photo-grid" id="aurora-grid">
+          <button class="photo-thumb reveal" onclick="openSlideshow(0,'aurora')">
+            <img class="no-save" src="photography/aurora_1.jpg" alt="Aurora photo 1" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(1,'aurora')">
+            <img class="no-save" src="photography/aurora_2.jpg" alt="Aurora photo 2" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(2,'aurora')">
+            <img class="no-save" src="photography/aurora_3.jpg" alt="Aurora photo 3" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(3,'aurora')">
+            <img class="no-save" src="photography/aurora_4.jpg" alt="Aurora photo 4" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(4,'aurora')">
+            <img class="no-save" src="photography/aurora_5.jpg" alt="Aurora photo 5" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(5,'aurora')">
+            <img class="no-save" src="photography/aurora_6.jpg" alt="Aurora photo 6" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(6,'aurora')">
+            <img class="no-save" src="photography/aurora_7.jpg" alt="Aurora photo 7" loading="lazy" decoding="async"/>
+          </button>
+          <button class="photo-thumb reveal" onclick="openSlideshow(7,'aurora')">
+            <img class="no-save" src="photography/aurora_8.jpg" alt="Aurora photo 8" loading="lazy" decoding="async"/>
+          </button>
+        </div>
+      </div>
+
+      <!-- Container where new hobby sections will be injected -->
+      <div id="custom-hobbies"></div>
+
+      <!-- Slideshow overlay (shared for all galleries) -->
+      <div id="slideshow-container" class="slideshow" aria-hidden="true" role="dialog" aria-label="Photos" tabindex="-1">
+        <button class="slide-close" aria-label="Close" onclick="closeSlideshow()">&times;</button>
+        <button class="slide-arrow left" aria-label="Previous" onclick="changePhoto(-1)"><i class="fas fa-chevron-left"></i></button>
+        <img id="slideshow-image" alt="Fullscreen photo" class="no-save" />
+        <button class="slide-arrow right" aria-label="Next" onclick="changePhoto(1)"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- Certifications -->
+    <section id="certifications" class="container section">
+      <h2 class="section-title reveal">Certifications</h2>
+
+      <div class="actions reveal">
+        <a
+          href="https://www.credly.com/users/ayushkumar-vinodkumar-patel"
+          class="btn credly" target="_blank" rel="noopener"
+        >
+          <i class="fas fa-shield-check" aria-hidden="true"></i>
+          View Credly
+        </a>
+      </div>
+
+      <!-- Credly Certifications Grid -->
+      <div class="grid certs-grid">
+        <a class="cert glass reveal" style="--hue:156" href="https://www.credly.com/badges/e6e7ca9f-b226-4312-a26a-0f13c106cf1a" target="_blank" rel="noopener">
+          <span>IBM Predictive Analytics Modeler</span>
+        </a>
+        <a class="cert glass reveal" style="--hue:4" href="https://www.credly.com/badges/e745e863-207a-43a0-8381-6031d4b0650f" target="_blank" rel="noopener">
+          <span>IBM Business Intelligence Analyst</span>
+        </a>
+        <a class="cert glass reveal" style="--hue:210" href="https://www.credly.com/badges/b7f383ef-d327-4043-b61a-d96a00edd97d" target="_blank" rel="noopener">
+          <span>Azure AI Fundamentals</span>
+        </a>
+        <a class="cert glass reveal" style="--hue:38" href="https://www.credly.com/badges/4c72e7aa-cb4c-464c-99b0-d88ee63fad08" target="_blank" rel="noopener">
+          <span>MS Security, Compliance & Identity</span>
+        </a>
+        <a class="cert glass reveal" style="--hue:282" href="https://www.credly.com/badges/3c9eaa09-f2ae-4786-8bed-2e4712fe7bdf" target="_blank" rel="noopener">
+          <span>IBM Enterprise Design Thinking</span>
+        </a>
+      </div>
+
+      <h3 class="subhead reveal">LinkedIn Learning</h3>
+      <div class="grid thumbs-grid">
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Advanced%20Formatting%20Techniques.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Advanced%20Formatting%20Techniques.png" alt="Excel Advanced Formatting Techniques certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Creating%20a%20Dashboard%20with%20Power%20Query%20Microsoft%20365.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Creating%20a%20Dashboard%20with%20Power%20Query%20Microsoft%20365.png" alt="Excel Creating a Dashboard with Power Query (Microsoft 365) certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Data%20Visualization%20Designing%20Custom%20Visualizations.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Data%20Visualization%20Designing%20Custom%20Visualizations.png" alt="Excel Data Visualization Designing Custom Visualizations certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Data%20Visualization%20Mastering%2020%20Charts%20and%20Graphs.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Data%20Visualization%20Mastering%2020%20Charts%20and%20Graphs.png" alt="Excel Data Visualization Mastering 20 Charts and Graphs certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Essential%20Training%20Microsoft%20365%202018.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Essential%20Training%20Microsoft%20365%202018.png" alt="Excel Essential Training Microsoft 365 2018 certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Power%20BI%20Data%20Modeling%20with%20DAX.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Power%20BI%20Data%20Modeling%20with%20DAX.png" alt="Power BI Data Modeling with DAX certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Power%20BI%20Essential%20Training%202020.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Power%20BI%20Essential%20Training%202020.png" alt="Power BI Essential Training 2020 certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Tableau%20Essential%20Training%202022.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Tableau%20Essential%20Training%202022.png" alt="Tableau Essential Training 2022 certificate" loading="lazy" decoding="async" />
+        </a>
+        <a class="thumb reveal" href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Tableau%20for%20Data%20Scientists.pdf" target="_blank" rel="noopener">
+          <img class="no-save" src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Tableau%20for%20Data%20Scientists.png" alt="Tableau for Data Scientists certificate" loading="lazy" decoding="async" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Contact Modal -->
+  <div id="popup-container" class="popup-container" role="dialog" aria-modal="true" aria-labelledby="contact-title" aria-hidden="true">
+    <div class="popup-content" tabindex="-1">
+      <button id="close-popup" class="close-btn" aria-label="Close contact dialog">&times;</button>
+      <h3 id="contact-title">Contact Me</h3>
+      <ul class="social-links">
+        <li><a href="mailto:patelayush1929@gmail.com" class="social-link"><i class="fas fa-envelope"></i>Email</a></li>
+        <li><a href="https://linkedin.com/in/ayushkumar-patel" class="social-link" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+        <li><a href="https://github.com/ayush1929" class="social-link" target="_blank" rel="noopener"><i class="fab fa-github"></i>GitHub</a></li>
+      </ul>
     </div>
+  </div>
 
-    <!-- <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>
-          I am a Data Analyst with expertise in data analytics, predictive
-          modelling and cybersecurity. Proficient in Python, C#, Java, and PHP,
-          I also have experience with data visualization tools such as Tableau,
-          Power BI, and IBM SPSS Modeler. My background includes working with
-          database platforms like SQL Server, MySQL, and Oracle,MS Access, as well as
-          hands-on experience in incident response and network security. I focus
-          on leveraging data to drive actionable insights, optimizing business
-          operations, and enhancing security protocols.
-        </p>
-        <p><h2><strong>Education</strong></h2></p>
-        <ul>
-          <li>
-            <strong
-              >Bachelor of Science in Computer Application and Information
-              Technology</strong
-            >, Sardar Patel University, Gujarat, India, July 2022
-          </li>
-          <li>
-            <strong
-              >Post-Graduate Certificate in Analytics for Business Decision
-              Making</strong
-            >, Mohawk College, Hamilton ON, September 2023 - April 2024
-          </li>
-          <li>
-            <strong
-              >Post-Graduate Certificate in Cyber Security Analytics</strong
-            >, Mohawk College, Hamilton ON, January 2023 - August 2023
-          </li>
-        </ul>
-        <h2>Technical Skills</h2>
-        <ul>
-          <li>
-            Data Analysis: Tableau, Power BI, IBM Cognos Analytics, IBM SPSS
-            Modeler
-          </li>
-          <li>Programming: Python, C#, Java, PHP</li>
-          <li>Database Platforms: SQL Server, MySQL, Oracle</li>
-          <li>Web Development: HTML5, CSS, JavaScript</li>
-          <li>
-            Cyber Security: Incident Response, Vulnerability Management, Network
-            Security (TCP/IP, VPN)
-          </li>
-          <li>Project Management: MS Project, Process Improvement</li>
-        </ul>
+  <footer>
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="mailto:patelayush1929@gmail.com" class="social-link">
+          <i class="fas fa-envelope social-icon" aria-hidden="true"></i>Email
+        </a>
+        <a href="https://linkedin.com/in/ayushkumar-patel" class="social-link" target="_blank" rel="noopener">
+          <i class="fab fa-linkedin social-icon" aria-hidden="true"></i>LinkedIn
+        </a>
+        <a href="https://github.com/ayush1929" class="social-link" target="_blank" rel="noopener">
+          <i class="fab fa-github social-icon" aria-hidden="true"></i>GitHub
+        </a>
       </div>
-    </section> -->
-
-    <section id="projects">
-      <div class="container">
-        <h2>Projects</h2>
-    
-        <div class="tab-container">
-          <button class="tab-button active" onclick="showSection('data-projects')">
-            Data Analysis Projects
-          </button>
-          <button class="tab-button" onclick="showSection('programming-projects')">
-            Programming Projects
-          </button>
-        </div>
-    
-        <!-- Data Analysis Projects Section -->
-        <div id="data-projects" class="project-section active">
-          <div class="project">
-            <img
-              src="capstone_project.jpg"
-              alt="Data Analyst Capstone Project"
-              class="project-img"
-            />
-            <h3>Data Analysis and Visualization (Capstone Group Project)</h3>
-            <p>
-              Analyzed large datasets of LinkedIn job postings using Tableau, Excel, and IBM SPSS Modeler. Applied predictive modeling and clustering to identify job market trends, salary disparities, and required skills. Developed actionable insights to aid career development and talent management through data-driven recommendations.
-            </p>
-            <p>
-              <a href="https://github.com/ayush1929/Data_Analyst_Capstone" target="_blank" class="cta-button">View Project</a>
-            </p>
-          </div>
-    
-          <div class="project">
-            <img src="HEAD_2024.jpg" alt="HEAD Competition Project" class="project-img" />
-            <h3>Assessing Risk of Extreme Weather on Facilities Maintenance (Group Project)</h3>
-            <p>
-              Conducted a data analysis project for the City of Hamilton, assessing the impact of extreme weather on facilities maintenance and infrastructure. Developed predictive models for the Facility Condition Index (FCI) to forecast building deterioration due to climate change. Proposed strategies for flood risk mitigation, early warning systems, and climate-resistant materials.
-            </p>
-            <p>
-              <a href="https://github.com/ayush1929/HEAD_2024/blob/main/Team11-HeadCompetition-FinalPoster.pdf" target="_blank" class="cta-button">View Project</a>
-            </p>
-          </div>
-        </div>
-    
-        <!-- Programming Projects Section -->
-        <div id="programming-projects" class="project-section">
-          
-          <!-- Login Alert System -->
-          <div class="project">
-            <img src="login-alert.jpg" alt="Login Alert System" class="project-img" />
-            <h3>Login Alert System (Python)</h3>
-            <p>
-              Created a tool that captures login details and sends real-time security alerts. The system detects login activity, captures an image via the webcam, and sends an email notification with the image attached.
-            </p>
-            <p><strong>Impact:</strong> This tool improved security for users by providing instant notifications of unauthorized access attempts, reducing incidents by 20%.</p>
-            <p>
-              <a href="https://github.com/ayush1929/login-alert" target="_blank" class="cta-button">View Project</a>
-            </p>
-          </div>
-    
-          <!-- Task Management API -->
-          <div class="project">
-            <img src="task_api.jpg" alt="Task Management API" class="project-img" />
-            <h3>Task Management API with Web Interface (Flask, SQLite)</h3>
-            <p>
-              Developed a RESTful API for managing tasks with a user-accessible web interface. The project features task scheduling, reminders, and user management.
-            </p>
-            <p>
-              <!-- <a href="https://your-live-ver.com" target="_blank" class="cta-button">Live Demo</a> -->
-              <a href="https://github.com/ayush1929/task-management-api/blob/main/app.py" target="_blank" class="cta-button">View Code</a>
-            </p>
-          </div>
-    
-          <!-- YouTube Music Video Downloader -->
-          <div class="project">
-            <!--<img src="youtube_downloader.jpg" alt="YouTube Music Video Downloader" class="project-img" />-->
-            <h3>YouTube Music Video Downloader (Python & FFmpeg)</h3>
-            <p>
-              Developed a program that downloads high-quality music videos from YouTube. It combines the best video and audio streams into a single file, helping users save videos in their preferred quality without the need for complex video editing software.
-            </p>
-            <p>
-              <a href="https://github.com/ayush1929/ytd-python/blob/main/ytd.py" target="_blank" class="cta-button">View Project</a>
-            </p>
-          </div>
-    
-          <!-- CNC Machine Simulator -->
-          <div class="project">
-            <img src="cnc.jpg" alt="CNC Machine Simulator" class="project-img" />
-            <h3>CNC Machine Simulator</h3>
-            <p>
-              A CNC machine simulator that visualizes G-code movements on a 2D grid. Users can upload G-code files or manually enter G-code into the editor. Logs are generated for every simulation.
-            </p>
-            <ul>
-              <li>G-code File Upload and Manual Editor</li>
-              <li>2D Toolpath Visualization on a grid</li>
-              <li>Simulate and log CNC tool movements</li>
-            </ul>
-            <p>
-              <a href="https://github.com/ayush1929/CNC_simulator" target="_blank" class="cta-button">View on GitHub</a>
-              <!-- <a href="http://127.0.0.1:5000/" target="_blank" class="cta-button">Live Demo</a> -->
-            </p>
-          </div>
-    
-          <!-- Password Generator -->
-          <div class="project">
-            <img src="password.jpg" alt="Password Generator" class="project-img" />
-            <h3>Password Generator (Python)</h3>
-            <p>
-              Built a customizable password generator that creates secure, randomized passwords based on user-defined criteria. It helps improve password strength and security practices.
-            </p>
-            <p>
-              <a href="https://github.com/ayush1929/password_generator-python/blob/main/password_generator.py" target="_blank" class="cta-button">View Project</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="certifications">
-      <div class="container">
-      <h2>Certifications</h2>
-        <!-- Redesigned View All Certifications Button -->
-        <div class="view-certifications">
-          <a
-            href="https://www.credly.com/users/ayushkumar-vinodkumar-patel"
-            class="cta-button"
-            id="view-certifications-button"
-            target="_blank"
-          >
-            <i class="fas fa-certificate"></i> Credly Certifications
-          </a>
-        </div>
-        <!-- Credly Certifications Grid -->
-        <div class="certificates-grid-credly">
-          <div class="certificate-block" style="background-color: #27de9e">
-            <a
-              href="https://www.credly.com/badges/e6e7ca9f-b226-4312-a26a-0f13c106cf1a"
-              target="_blank"
-            >
-              <p>IBM Predictive Analytics Modeler</p>
-            </a>
-          </div>
-          <div class="certificate-block" style="background-color: #f44336">
-            <a
-              href="https://www.credly.com/badges/e745e863-207a-43a0-8381-6031d4b0650f"
-              target="_blank"
-            >
-              <p>IBM Business Intelligence Analyst</p>
-            </a>
-          </div>
-          <div class="certificate-block" style="background-color: #2196f3">
-            <a
-              href="https://www.credly.com/badges/b7f383ef-d327-4043-b61a-d96a00edd97d"
-              target="_blank"
-            >
-              <p>Microsoft Azure AI Fundamentals</p>
-            </a>
-          </div>
-          <div class="certificate-block" style="background-color: #ff9800">
-            <a
-              href="https://www.credly.com/badges/4c72e7aa-cb4c-464c-99b0-d88ee63fad08"
-              target="_blank"
-            >
-              <p>Microsoft Security, Compliance and Identity Fundamentals</p>
-            </a>
-          </div>
-          <div class="certificate-block" style="background-color: #9c27b0">
-            <a
-              href="https://www.credly.com/badges/3c9eaa09-f2ae-4786-8bed-2e4712fe7bdf"
-              target="_blank"
-            >
-              <p>IBM Enterprise Design Thinking</p>
-            </a>
-          </div>
-        </div>
-        <!-- LinkedIn Learning Certifications -->
-        <h3>LinkedIn Learning Certifications</h3>
-
-        <div class="certificates-grid-linkedin">
-          <!-- Certificate 1 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Advanced%20Formatting%20Techniques.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Advanced%20Formatting%20Techniques.png"
-                alt="Excel Advanced Formatting Techniques"
-              />
-            </a>
-            <p>Excel Advanced Formatting Techniques</p>
-          </div>
-
-          <!-- Certificate 2 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Creating%20a%20Dashboard%20with%20Power%20Query%20Microsoft%20365.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Creating%20a%20Dashboard%20with%20Power%20Query%20Microsoft%20365.png"
-                alt="Excel Creating a Dashboard with Power Query"
-              />
-            </a>
-            <p>Excel Creating a Dashboard with Power Query Microsoft 365</p>
-          </div>
-
-          <!-- Certificate 3 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Data%20Visualization%20Designing%20Custom%20Visualizations.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Data%20Visualization%20Designing%20Custom%20Visualizations.png"
-                alt="Excel Data Visualization Designing Custom Visualizations"
-              />
-            </a>
-            <p>Excel Data Visualization Designing Custom Visualizations</p>
-          </div>
-
-          <!-- Certificate 4 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Data%20Visualization%20Mastering%2020%20Charts%20and%20Graphs.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Data%20Visualization%20Mastering%2020%20Charts%20and%20Graphs.png"
-                alt="Excel Data Visualization Mastering 20 Charts and Graphs"
-              />
-            </a>
-            <p>Excel Data Visualization Mastering 20 Charts and Graphs</p>
-          </div>
-
-          <!-- Certificate 5 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Excel%20Essential%20Training%20Microsoft%20365%202018.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Excel%20Essential%20Training%20Microsoft%20365%202018.png"
-                alt="Excel Essential Training Microsoft 365 2018"
-              />
-            </a>
-            <p>Excel Essential Training Microsoft-365</p>
-          </div>
-
-          <!-- Certificate 6 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Power%20BI%20Data%20Modeling%20with%20DAX.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Power%20BI%20Data%20Modeling%20with%20DAX.png"
-                alt="Power BI Data Modeling with DAX"
-              />
-            </a>
-            <p>Power BI Data Modeling with DAX</p>
-          </div>
-
-          <!-- Certificate 7 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Power%20BI%20Essential%20Training%202020.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Power%20BI%20Essential%20Training%202020.png"
-                alt="Power BI Essential Training 2020"
-              />
-            </a>
-            <p>Power BI Essential Training 2020</p>
-          </div>
-
-          <!-- Certificate 8 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Tableau%20Essential%20Training%202022.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Tableau%20Essential%20Training%202022.png"
-                alt="Tableau Essential Training 2022"
-              />
-            </a>
-            <p>Tableau Essential Training 2022</p>
-          </div>
-
-          <!-- Certificate 9 -->
-          <div class="certificate-item">
-            <a
-              href="https://ayush1929.github.io/LinkedIn_Certification/CertificateOfCompletion_Tableau%20for%20Data%20Scientists.pdf"
-              target="_blank"
-            >
-              <img
-                src="https://ayush1929.github.io/thumbnails/CertificateOfCompletion_Tableau%20for%20Data%20Scientists.png"
-                alt="Tableau for Data Scientists"
-              />
-            </a>
-            <p>Tableau for Data Scientists</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- <section id="resume">
-      <div class="container">
-        <h2>Resume</h2>
-        <p>
-          <button
-            id="resume-button"
-            class="cta-button"
-            onclick="window.location.href='Ayush_Patel_Resume.pdf';"
-          >
-            Download Resume (PDF)
-          </button>
-        </p>
-      </div>
-    </section> -->
-    <footer>
-      <div class="container">
-        <div class="footer-links">
-          <a href="mailto:ayushkumarp.29@gmail.com" class="social-link">
-            <i class="fas fa-envelope social-icon"></i>Email
-          </a>
-          <a
-            href="https://linkedin.com/in/ayushkumar-patel"
-            class="social-link"
-          >
-            <i class="fab fa-linkedin social-icon"></i>LinkedIn Profile
-          </a>
-          <a href="https://github.com/ayush1929" class="social-link">
-            <i class="fab fa-github social-icon"></i>GitHub Profile
-          </a>
-        </div>
-        <p>&copy; 2024 Ayush Patel. All rights reserved.</p>
-      </div>
-    </footer>
-    <script src="script.js"></script>
-  </body>
+      <p>&copy; 2025 Ayush Patel. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
