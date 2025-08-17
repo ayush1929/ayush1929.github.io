@@ -98,7 +98,6 @@ I also capture nature, landscapes, and **aurora photography**.
 
 ---
 
----
 
 ## License
 This Website is licensed under the MIT License. See [LICENSE](LICENSE) for details.
