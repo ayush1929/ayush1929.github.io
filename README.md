@@ -98,4 +98,11 @@ I also capture nature, landscapes, and **aurora photography**.
 
 ---
 
+---
+
+## License
+This Website is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+
+---
+
 © 2025 Ayush Patel. All rights reserved.
